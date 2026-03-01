@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Jun 09 15:32:29 EDT 2023
+https\://artifactrepository.citigroup.net\:443/artifactory/maven-gcg-dev/.lastUpdated=1686339149858
+@default-central-https\://repo.maven.apache.org/maven2/.lastUpdated=1685729069630
+https\://repo.maven.apache.org/maven2/.error=Could not transfer artifact commons-validator\:commons-validator\:pom\:1.6 from/to central (https\://repo.maven.apache.org/maven2)\: connect timed out
