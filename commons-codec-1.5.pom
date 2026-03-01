@@ -24,15 +24,15 @@ limitations under the License.
   <parent>
     <groupId>org.apache.commons</groupId>
     <artifactId>commons-parent</artifactId>
-    <version>69</version>
+    <version>71</version>
   </parent>
   <groupId>commons-codec</groupId>
   <artifactId>commons-codec</artifactId>
-  <version>1.17.0</version>
+  <version>1.17.1</version>
   <name>Apache Commons Codec</name>
   <inceptionYear>2002</inceptionYear>
   <description>
-     The Apache Commons Codec component contains encoder and decoders for
+     The Apache Commons Codec component contains encoders and decoders for
      various formats such as Base16, Base32, Base64, digest, and Hexadecimal. In addition to these
      widely used encoders and decoders, the codec package also maintains a
      collection of phonetic encoding utilities.
@@ -50,9 +50,9 @@ limitations under the License.
   </scm>
   <distributionManagement>
     <site>
-      <id>stagingSite</id>
-      <name>Apache Staging Website</name>
-      <url>${commons.deployment.protocol}://people.apache.org/www/commons.apache.org/commons-${commons.componentid}/</url>
+      <id>apache.website</id>
+      <name>Apache Commons Site</name>
+      <url>scm:svn:https://svn.apache.org/repos/infra/websites/production/commons/content/proper/commons-codec/</url>
     </site>
   </distributionManagement>
   <dependencies>
@@ -98,18 +98,17 @@ limitations under the License.
     <commons.encoding>UTF-8</commons.encoding>
     <checkstyle.header.file>${basedir}/src/conf/checkstyle-header.txt</checkstyle.header.file>
     <checkstyle.config.file>${basedir}/src/conf/checkstyle.xml</checkstyle.config.file>
-    <jacoco.skip>false</jacoco.skip>
     <!-- Commons Release Plugin -->
-    <commons.release.version>1.17.0</commons.release.version>
-    <commons.bc.version>1.16.1</commons.bc.version>
-    <commons.bc.next>1.17.1</commons.bc.next>
+    <commons.release.version>1.17.1</commons.release.version>
+    <commons.bc.version>1.17.0</commons.bc.version>
+    <commons.bc.next>1.17.2</commons.bc.next>
     <commons.rc.version>RC1</commons.rc.version>
     <commons.release.isDistModule>true</commons.release.isDistModule>
     <commons.distSvnStagingUrl>scm:svn:https://dist.apache.org/repos/dist/dev/commons/${commons.componentid}</commons.distSvnStagingUrl>
-    <project.build.outputTimestamp>2024-04-20T18:05:56Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2024-07-12T16:14:24Z</project.build.outputTimestamp>
     <commons.jacoco.version>0.8.12</commons.jacoco.version>
-    <commons.javadoc.java.link>${commons.javadoc21.java.link}</commons.javadoc.java.link>
     <!-- JaCoCo: Don't make code coverage worse than: -->
+    <jacoco.skip>false</jacoco.skip>
     <commons.jacoco.haltOnFailure>true</commons.jacoco.haltOnFailure>
     <commons.jacoco.classRatio>0.92</commons.jacoco.classRatio>
     <commons.jacoco.instructionRatio>0.91</commons.jacoco.instructionRatio>
@@ -209,7 +208,7 @@ limitations under the License.
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>animal-sniffer-maven-plugin</artifactId>
-        <version>1.23</version>
+        <version>1.24</version>
         <configuration>
           <ignores>
             <!-- JDK9 breaks compatibility by returning ByteBuffer not Buffer -->
@@ -264,7 +263,7 @@ limitations under the License.
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>taglist-maven-plugin</artifactId>
-        <version>3.0.0</version>
+        <version>3.1.0</version>
         <configuration>
           <tags>
             <tag>TODO</tag>
