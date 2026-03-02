@@ -1,5 +1,0 @@
-#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Fri Jun 09 15:31:57 EDT 2023
-https\://artifactrepository.citigroup.net\:443/artifactory/maven-gcg-dev/.lastUpdated=1686339117085
-@default-central-https\://repo.maven.apache.org/maven2/.lastUpdated=1685727500155
-https\://repo.maven.apache.org/maven2/.error=Could not transfer artifact info.debatty\:java-string-similarity\:pom\:2.0.0 from/to central (https\://repo.maven.apache.org/maven2)\: connect timed out
